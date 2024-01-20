@@ -15,6 +15,8 @@ cp mod_jk.so /usr/lib/apache2/modules
 echo "Desabilitando site padrão do apache"
 /usr/sbin/a2dissite default
 rm -f /etc/apache2/sites-available/default
+
+echo "Recriando site padrão e configurando SPEd"
 cp default /etc/apache2/sites-available
 /usr/sbin/a2ensite default
 
