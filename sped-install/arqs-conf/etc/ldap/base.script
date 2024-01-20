@@ -1,0 +1,21 @@
+dn: #BASE#
+objectClass: dcObject
+objectClass: organization
+dc: #DC#
+o: Exercito Brasileiro
+
+dn: cn=admin_sped,#BASE#
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: admin_sped
+uid: admin_sped
+uidNumber: 0
+gidNumber: 0
+homeDirectory: /
+sn: SPED
+userPassword: #SENHA#
+displayName: Dono do SPED
+givenName: Dono

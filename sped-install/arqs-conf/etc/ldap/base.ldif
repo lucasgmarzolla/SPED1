@@ -1,0 +1,21 @@
+dn: LDAP_DN
+objectClass: dcObject
+objectClass: organization
+dc: LDAP_DC
+o: ORG
+
+dn: cn=admin_sped,LDAP_DN
+objectClass: posixAccount
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: admin_sped
+uid: admin_sped
+uidNumber: 0
+gidNumber: 0
+homeDirectory: /
+sn: SPED
+userPassword: LDAP_PWD_MD5
+displayName: Dono do SPED
+givenName: Dono
